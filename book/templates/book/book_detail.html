@@ -1,0 +1,9 @@
+<a href="{% url 'book:book_list' %}"><h1>Our Book</h1></a>
+<hr>
+<h3>{{book.name}}</h3>
+<h3>{{book.publish_date}}</h3>
+<h3>{{book.category}}</h3>
+<h3>{{book.auther}}</h3>
+<a href="{% url 'book:edit_book' book.id %}">Edit Book</a>
+<br>
+<a href="{% url 'book:delete_book' book.id %}">Delete Book</a>

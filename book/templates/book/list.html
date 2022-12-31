@@ -1,0 +1,6 @@
+<a href="{% url 'book:book_list' %}"><h1>Our Book</h1></a>
+<a href="{% url 'book:new_book' %}">New Book</a>
+<hr />
+{% for obj in all_book %}
+<a href="{% url 'book:book_detail' obj.id %}"><h3>{{obj.name}}</h3></a>
+{% endfor %}
